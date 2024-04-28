@@ -1,0 +1,68 @@
+:root {
+    --background-color-black: rgb(28, 26, 26);
+    --background-color-white: rgb(255, 255, 255);
+    --background-color-purple: rgb(219, 190, 253);
+    --background-color-dark-purple: rgb(32, 5, 63);
+    --background-color-light-purple: rgb(58, 21, 100);
+
+    --border-color-grey: rgb(180, 180, 180);
+
+    --color-text: white;
+
+    --color-input-text: rgb(69, 69, 69);
+    --color-input-focus-text: rgb(32, 5, 63);
+
+    --roboto-font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--background-color-black);
+    margin: 5rem;
+    font-family: var(--roboto-font-family);
+}
+
+form {
+    width: 30rem;
+    margin: 20rem auto;
+    background-color: var(--background-color-white);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    border: 1px solid var(--border-color-grey);
+    padding: 0.25rem;
+    color: var(--color-input-text);
+}
+
+input:focus {
+    background-color: var(--background-color-purple);
+    color: var(--color-input-focus-text);
+    border-color: var(--color-input-focus-text);
+}
+
+button {
+    display: block;
+    font: inherit;
+    background-color: var(--background-color-dark-purple);
+    color: var(--color-text);
+    border: 1px solid var(--background-color-dark-purple);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--background-color-light-purple);
+    border-color: var(--background-color-light-purple);
+}
