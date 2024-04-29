@@ -21,9 +21,20 @@ body {
     font-family: var(--roboto-font-family);
 }
 
+h1 {
+    text-align: center;
+    color: var(--color-text);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 form {
     width: 30rem;
-    margin: 20rem auto;
+    margin: 10rem auto;
     background-color: var(--background-color-white);
     padding: 1rem;
     border-radius: 6px;
@@ -34,7 +45,9 @@ label {
     margin-bottom: 0.5rem;
 }
 
-input {
+input,
+textarea,
+select {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
@@ -45,7 +58,8 @@ input {
     color: var(--color-input-text);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     background-color: var(--background-color-purple);
     color: var(--color-input-focus-text);
     border-color: var(--color-input-focus-text);
@@ -65,4 +79,13 @@ button {
 button:hover {
     background-color: var(--background-color-light-purple);
     border-color: var(--background-color-light-purple);
+}
+
+.form-control-inline {
+    display: flex;
+}
+
+.form-control-inline input {
+    width: auto;
+    margin-right: 1.5rem;
 }
