@@ -58,6 +58,10 @@ select {
     color: var(--color-input-text);
 }
 
+textarea {
+    resize: none;
+}
+
 input:focus,
 textarea:focus {
     background-color: var(--background-color-purple);
